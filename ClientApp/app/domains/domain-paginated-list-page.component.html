@@ -1,0 +1,5 @@
+<ce-domain-paginated-list [domains]="domains"                           
+                           (delete)="tryToDelete($event)"
+                           (edit)="tryToEdit($event)"
+                           (filterKeyUp)="handleDomainsFilterKeyUp($event)">
+</ce-domain-paginated-list>
