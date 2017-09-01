@@ -6,7 +6,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion></ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2250BEF5-1F73-47F6-8C6C-8FFBFC22F496}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -21,7 +22,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.4</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -253,6 +255,24 @@
       <DependentUpon>app.component.html</DependentUpon>
     </Content>
     <Content Include="ClientApp\app\app.component.html" />
+    <Content Include="ClientApp\app\domains\domain-edit-page.component.css">
+      <DependentUpon>domain-edit-page.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\domains\domain-edit.component.css">
+      <DependentUpon>domain-edit.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\domains\domain-list-item.component.css">
+      <DependentUpon>domain-list-item.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\domains\domain-paginated-list-page.component.css">
+      <DependentUpon>domain-paginated-list-page.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\domains\domain-paginated-list.component.css">
+      <DependentUpon>domain-paginated-list.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\domains\domains-left-nav.component.css">
+      <DependentUpon>domains-left-nav.component.html</DependentUpon>
+    </Content>
     <Content Include="ClientApp\app\home\home-page.component.css">
       <DependentUpon>home-page.component.html</DependentUpon>
     </Content>
@@ -320,17 +340,11 @@
     <Content Include="ClientApp\app\shared\components\left-nav.component.html" />
     <Content Include="ClientApp\app\home\home-page.component.html" />
     <Content Include="ClientApp\app\home\home-popover.component.html" />
-    <Content Include="ClientApp\app\domains\domain-edit.component.css" />
     <Content Include="ClientApp\app\domains\domain-edit.component.html" />
-    <Content Include="ClientApp\app\domains\domain-paginated-list.component.css" />
     <Content Include="ClientApp\app\domains\domain-paginated-list.component.html" />
-    <Content Include="ClientApp\app\domains\domain-list-item.component.css" />
     <Content Include="ClientApp\app\domains\domain-list-item.component.html" />
-    <Content Include="ClientApp\app\domains\domain-paginated-list-page.component.css" />
     <Content Include="ClientApp\app\domains\domain-paginated-list-page.component.html" />
-    <Content Include="ClientApp\app\domains\domain-edit-page.component.css" />
     <Content Include="ClientApp\app\domains\domain-edit-page.component.html" />
-    <Content Include="ClientApp\app\domains\domains-left-nav.component.css" />
     <Content Include="ClientApp\app\domains\domains-left-nav.component.html" />
   </ItemGroup>
   <ItemGroup>
@@ -405,7 +419,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClientApp\app\domains\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
@@ -414,6 +427,24 @@
     </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\app.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\app.routing.ts" />
+    <TypeScriptCompile Include="ClientApp\app\domains\domain-edit-page.component.ts">
+      <DependentUpon>domain-edit-page.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\domains\domain-edit.component.ts">
+      <DependentUpon>domain-edit.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\domains\domain-list-item.component.ts">
+      <DependentUpon>domain-list-item.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\domains\domain-paginated-list-page.component.ts">
+      <DependentUpon>domain-paginated-list-page.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\domains\domain-paginated-list.component.ts">
+      <DependentUpon>domain-paginated-list.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\domains\domains-left-nav.component.ts">
+      <DependentUpon>domains-left-nav.component.html</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\environment.ts" />
     <TypeScriptCompile Include="ClientApp\app\home\home-page.component.ts">
       <DependentUpon>home-page.component.html</DependentUpon>
@@ -502,12 +533,6 @@
     <TypeScriptCompile Include="ClientApp\app\home\home.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\domains\index.ts" />
     <TypeScriptCompile Include="ClientApp\app\domains\domain.model.ts" />
-    <TypeScriptCompile Include="ClientApp\app\domains\domain-edit.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\domains\domain-paginated-list.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\domains\domain-list-item.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\domains\domain-paginated-list-page.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\domains\domain-edit-page.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\domains\domains-left-nav.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\domains\domains.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\domains\domains.module.ts" />
   </ItemGroup>
@@ -530,7 +555,8 @@
           <IISUrl>http://localhost:58691/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

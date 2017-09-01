@@ -18,7 +18,7 @@ namespace DomainService.Data
     public class DomainServiceContext : DbContext, IDomainServiceContext
     {
         public DomainServiceContext ()
-            :base("AspNetNgStarterContext")
+            :base("DomainServiceContext")
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;
