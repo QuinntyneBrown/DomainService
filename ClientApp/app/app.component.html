@@ -1,11 +1,13 @@
 <ce-header [isAuthenticated]="isAuthenticated" ></ce-header>
 <ce-left-nav *ngIf="isAuthenticated">
-    <h3>Home</h3>
-    <ul>
-        <li>
-            <a routerLink="/">home</a>
-        </li>        
-    </ul>
+    <div>
+        <h3>Home</h3>
+        <ul>
+            <li>
+                <a routerLink="/">home</a>
+            </li>
+        </ul>
+    </div>
 
     <ce-domains-left-nav></ce-domains-left-nav>
 </ce-left-nav>
