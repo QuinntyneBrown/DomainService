@@ -276,9 +276,6 @@
     <Content Include="ClientApp\app\home\home-page.component.css">
       <DependentUpon>home-page.component.html</DependentUpon>
     </Content>
-    <Content Include="ClientApp\app\home\home-popover.component.css">
-      <DependentUpon>home-popover.component.html</DependentUpon>
-    </Content>
     <Content Include="ClientApp\app\shared\components\backdrop.component.css">
       <DependentUpon>backdrop.component.html</DependentUpon>
     </Content>
@@ -324,6 +321,7 @@
     <Content Include="ClientApp\app\users\login.component.html" />
     <Content Include="ClientApp\styles\edit.css" />
     <Content Include="ClientApp\styles\forms.css" />
+    <Content Include="ClientApp\styles\left-nav.css" />
     <Content Include="ClientApp\styles\list-item.css" />
     <Content Include="ClientApp\styles\list.css" />
     <Content Include="dist\app.js" />
@@ -339,7 +337,6 @@
     <Content Include="ClientApp\app\shared\components\tab-title.component.html" />
     <Content Include="ClientApp\app\shared\components\left-nav.component.html" />
     <Content Include="ClientApp\app\home\home-page.component.html" />
-    <Content Include="ClientApp\app\home\home-popover.component.html" />
     <Content Include="ClientApp\app\domains\domain-edit.component.html" />
     <Content Include="ClientApp\app\domains\domain-paginated-list.component.html" />
     <Content Include="ClientApp\app\domains\domain-list-item.component.html" />
@@ -448,9 +445,6 @@
     <TypeScriptCompile Include="ClientApp\app\environment.ts" />
     <TypeScriptCompile Include="ClientApp\app\home\home-page.component.ts">
       <DependentUpon>home-page.component.html</DependentUpon>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="ClientApp\app\home\home-popover.component.ts">
-      <DependentUpon>home-popover.component.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\index.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\components\backdrop.component.ts">

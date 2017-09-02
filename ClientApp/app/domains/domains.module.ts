@@ -18,6 +18,7 @@ import { DomainEditPageComponent } from "./domain-edit-page.component";
 import { DomainListItemComponent } from "./domain-list-item.component";
 import { DomainPaginatedListComponent } from "./domain-paginated-list.component";
 import { DomainPaginatedListPageComponent } from "./domain-paginated-list-page.component";
+import { DomainsLeftNavComponent } from "./domains-left-nav.component";
 
 export const DOMAIN_ROUTES: Routes = [{
     path: 'domains',
@@ -55,7 +56,8 @@ const declarables = [
     DomainEditPageComponent,
     DomainListItemComponent,
     DomainPaginatedListComponent,
-    DomainPaginatedListPageComponent
+    DomainPaginatedListPageComponent,
+    DomainsLeftNavComponent
 ];
 
 const providers = [DomainsService];

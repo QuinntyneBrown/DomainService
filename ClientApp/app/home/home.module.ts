@@ -6,10 +6,9 @@ import { TenantGuardService } from "../shared/guards/tenant-guard.service";
 import { AuthGuardService } from "../shared/guards/auth-guard.service";
 import { EventHubConnectionGuardService } from "../shared/guards/event-hub-connection-guard.service";
 import { HomePageComponent } from "./home-page.component";
-import { HomePopoverComponent } from "./home-popover.component";
 
 
-const declarables = [HomePageComponent, HomePopoverComponent];
+const declarables = [HomePageComponent];
 const providers = [];
 
 export const HOME_ROUTES = [
@@ -29,6 +28,6 @@ export const HOME_ROUTES = [
     exports: [declarables],
     declarations: [declarables],
     providers: providers,
-    entryComponents: [HomePopoverComponent]
+    entryComponents: []
 })
 export class HomeModule { }
