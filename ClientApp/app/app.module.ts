@@ -12,9 +12,9 @@ import {TenantsModule} from "../app/tenants/tenants.module";
 
 import {AppComponent} from './app.component';
 
-import { DomainsModule } from "./domains/domains.module";
+import {DomainsModule} from "./domains/domains.module";
 
-import { RoutingModule } from "./app.routing";
+import {RoutingModule} from "./app.routing";
 
 const declarables = [
     AppComponent

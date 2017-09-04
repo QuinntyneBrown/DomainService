@@ -3,9 +3,7 @@ using DomainService.Data;
 using DomainService.Model;
 using DomainService.Features.Core;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Linq;
 using System.Data.Entity;
 
 namespace DomainService.Features.Domains
@@ -40,6 +38,8 @@ namespace DomainService.Features.Domains
                 }
 
                 entity.Name = request.Domain.Name;
+
+                entity.Description = request.Domain.Description;
                 
                 await _context.SaveChangesAsync();
 
