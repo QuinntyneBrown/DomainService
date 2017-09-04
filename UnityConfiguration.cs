@@ -1,5 +1,6 @@
 
 using DomainService.Features.Core;
+using DomainService.Features.Domains;
 using MediatR;
 using Microsoft.Practices.Unity;
 using System;
@@ -29,6 +30,8 @@ namespace DomainService
                     return new MemoryCache();
                 }));
 
+
+            container.RegisterType<IDomainsEventBusMessageHandler, DomainsEventBusMessageHandler>();
 
             return container;
         }
