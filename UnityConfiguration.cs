@@ -20,7 +20,6 @@ namespace DomainService
             container.RegisterType<HttpClient>(
                 new ContainerControlledLifetimeManager(),
                 new InjectionFactory(x => {
-
                     return new HttpClient();
                 }));
 

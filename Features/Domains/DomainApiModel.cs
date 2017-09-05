@@ -1,4 +1,5 @@
 using DomainService.Model;
+using Humanizer;
 
 namespace DomainService.Features.Domains
 {
@@ -8,6 +9,7 @@ namespace DomainService.Features.Domains
         public int? TenantId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public string PluralizedName { get { return Name.Pluralize(false); } }
 
         public static TModel FromDomain<TModel>(Domain domain) where
             TModel : DomainApiModel, new()
